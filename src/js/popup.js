@@ -71,7 +71,7 @@ export async function createMoviePopup(movie) {
     const isLocal = window.location.hostname === 'localhost';
     let popupPath = isLocal
       ? '/popup.html'
-      : `/${window.location.pathname.split('/')[1]}/popup.html`;
+      : `/${window.location.pathname.split('/')[1]}/partials/popup.html`;
 
     try {
       const res = await fetch(popupPath);
