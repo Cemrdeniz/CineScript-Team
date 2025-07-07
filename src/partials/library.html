@@ -1,1 +1,44 @@
 <section class="library" id="library">library section..</section>
+<section class="library" id="library">
+  <div class="library-placeholder" id="library-placeholder">
+    <h2 class="library-text">
+      OOPPS..<br />
+      We are very sorry!<br />
+      You don't have any movies at your library.
+    </h2>
+    <button type="button" class="btn-primary library-btn search" id="go-to-catalog">
+      Search movie
+    </button>
+  </div>
+
+  <div class="library-genre-section">
+    <div class="library-custom-select">
+      <div class="library-selected-option">
+        Genre
+        <img
+          src="./img/svg/chevron-down.svg"
+          alt="Dropdown arrow"
+          class="library-dropdown-icon"
+        />
+      </div>
+      <ul class="library-genre-options hidden">
+        <!-- JavaScript ile buraya li'ler eklenecek -->
+      </ul>
+    </div>
+
+    <div class="library-film-list-section">
+      <ul id="library-film-list" class="library-film-list">
+        <!-- JavaScript ile buraya li'ler eklenecek -->
+      </ul>
+      <button id="load-more-btn" class="btn-primary library-btn load-more-btn">
+        Load More
+      </button>
+    </div>
+  </div>
+
+<div id="library-loading" class="library-loading" style="display: none;">
+  Loading...
+</div>
+
+  <script type="module" src="./js/library.js"></script>
+</section>
